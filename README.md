@@ -10,5 +10,13 @@ basic project
   Use Phinx
   https://phinx.org/
 
+3 - Create a Phinx migration
+  $ vendor/bin/phinx CreateCategoryCosts
 
-  
+4 - Create a migration (execute the Up method)
+  $ vendor/bin/phinx migrate
+  or
+  $ vendor/bin/phinx migrate -e production
+
+  we can use rollback, like:
+  $ vendor/bin/phinx rollback -t '20170812192511'
