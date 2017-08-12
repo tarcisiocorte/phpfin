@@ -25,3 +25,8 @@ basic project
   ~# vendor/bin/phinx seed:create CategoryCostsSeeder
     or  
   ~# vendor/bin/phinx seed:run
+
+6. Use PHP Faker :https://github.com/fzaninotto/Faker
+  ~# composer require fzaninotto/faker
+    after run seed
+  ~# vendor/bin/phinx seed:run
