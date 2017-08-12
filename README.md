@@ -6,3 +6,9 @@ basic project
 
 2 - Set up the composer.json
   $ composer dumpautoload
+
+  Use Phinx
+  https://phinx.org/
+
+
+  

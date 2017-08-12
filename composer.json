@@ -6,7 +6,9 @@
             "email": "tarcisiocorte@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "robmorgan/phinx": "0.7.1"
+    },
     "autoload":{
       "psr-4":{
         "TCCPFin\\":"src/"
