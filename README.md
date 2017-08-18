@@ -34,5 +34,8 @@ basic project
 7. Use Pimple Container Interop
   ~# composer require container-interop/container-interop
 
-8. Aura.Router 
- ~# composer require aura/router:3.1.0
+8. Aura.Router
+  ~# composer require aura/router:3.1.0
+
+9. Using Zend Diactoros
+  ~# composer require zendframework/zend-diactoros:1.3.10
