@@ -30,3 +30,6 @@ basic project
   ~# composer require fzaninotto/faker
     after run seed
   ~# vendor/bin/phinx seed:run
+
+7. Use Pimple Container Interop
+  ~# composer require container-interop/container-interop
