@@ -33,3 +33,6 @@ basic project
 
 7. Use Pimple Container Interop
   ~# composer require container-interop/container-interop
+
+8. Aura.Router 
+ ~# composer require aura/router:3.1.0
