@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace PHPFin\Plugins;
+namespace SONFin\Plugins;
 
 
 use Aura\Router\RouterContainer;
 use Interop\Container\ContainerInterface;
 use Psr\Http\Message\RequestInterface;
-use PHPFin\ServiceContainerInterface;
+use SONFin\ServiceContainerInterface;
 use Zend\Diactoros\ServerRequestFactory;
 
 class RoutePlugin implements PluginInterface
@@ -44,4 +44,3 @@ class RoutePlugin implements PluginInterface
         );
     }
 }
-?>

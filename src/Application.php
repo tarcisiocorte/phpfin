@@ -1,7 +1,13 @@
 <?php
 declare(strict_types = 1);
-namespace PHPFin;
-namespace PHPFin\ServiceContainer;
+namespace SONFin;
+
+
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
+use SONFin\Plugins\PluginInterface;
+use Zend\Diactoros\Response\SapiEmitter;
 
 class Application
 {
@@ -21,7 +27,7 @@ class Application
         return $this->serviceContainer->get($name);
     }
 
-    public function addService(string $name, $service):void
+    public function addService(string $name, $service): void
     {
         if (is_callable($service)) {
             $this->serviceContainer->addLazy($name, $service);
@@ -30,24 +36,38 @@ class Application
         }
     }
 
-    public function plugin(PluginInterface $plugin):void
+    public function plugin(PluginInterface $plugin): void
     {
-      $plugin->register($this->serviceContainer);
+        $plugin->register($this->serviceContainer);
     }
 
-    public function get($path, $action, $name = null): Application
-    {
-      $routing = $this->service('routing');
-      $routing->get($name, $path, $action);
-      return $this;
+    public function get($path, $action, $name = null): Application{
+        $routing = $this->service('routing');
+        $routing->get($name, $path, $action);
+        return $this;
     }
 
-    public function start()
-    {
-      $route = $this->service('route');
+    public function start(){
+        $route = $this->service('route');
+        /** @var ServerRequestInterface $request */
+        $request = $this->service(RequestInterface::class);
 
-      $callable = $route->handler;
-      $callable();
+        if(!$route){
+            echo "Page not found";
+            exit;
+        }
+
+        foreach ($route->attributes as $key => $value){
+            $request = $request->withAttribute($key,$value);
+        }
+
+        $callable = $route->handler;
+        $response = $callable($request);
+        $this->emitResponse($response);
+    }
+
+    protected function emitResponse(ResponseInterface $response){
+        $emitter = new SapiEmitter();
+        $emitter->emit($response);
     }
 }
-?>

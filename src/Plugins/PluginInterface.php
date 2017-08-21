@@ -1,11 +1,11 @@
 <?php
 
-declare(strict_types = 1);
+namespace SONFin\Plugins;
 
-namespace PHPFin\Plugins;
+
+use SONFin\ServiceContainerInterface;
 
 interface PluginInterface
 {
-  public function register(ServiceContainerInterface $container);
+    public function register(ServiceContainerInterface $container);
 }
-?>

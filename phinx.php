@@ -1,5 +1,7 @@
-<<?php
+<?php
+
 require __DIR__ . '/vendor/autoload.php';
+
 $db = include __DIR__ . '/config/db.php';
 list(
     'driver' => $adapter,
