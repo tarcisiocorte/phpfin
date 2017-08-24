@@ -1,5 +1,4 @@
 <?php
-declare (string_types = 1);
 
 namespace SONFin\Plugins;
 
