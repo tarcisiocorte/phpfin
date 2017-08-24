@@ -39,3 +39,9 @@ basic project
 
 9. Using Zend Diactoros
   ~# composer require zendframework/zend-diactoros:1.3.10
+
+10. Eloquent
+  ~# composer require illuminate/database:5.4.13
+
+mbstring extenstion should be available at your system
+
