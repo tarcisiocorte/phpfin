@@ -11,7 +11,7 @@ basic project
   https://phinx.org/
 
 3. Create a Phinx migration
-  ~# vendor/bin/phinx CreateCategoryCosts
+  ~# vendor/bin/phinx create CategoryCosts
 
 4. Create a migration (execute the Up method)
   ~# vendor/bin/phinx migrate
