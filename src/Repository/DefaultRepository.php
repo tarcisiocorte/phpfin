@@ -1,45 +1,42 @@
 <?php
+declare(strict_types=1);
+namespace SONFin\Repository;
 
-declare(struct_types = 1);
-
-namespace PHPFin\Repository;
 
 use Illuminate\Database\Eloquent\Model;
-
 
 class DefaultRepository implements RepositoryInterface
 {
     /**
      * @var string
      */
-    private $_modelClass;
+    private $modelClass;
     /**
      * @var Model
      */
-    private $_model;
+    private $model;
 
 
     /**
      * DefaultRepository constructor.
-     *
      * @param string $modelClass
      */
     public function __construct(string $modelClass)
     {
-        $this->_modelClass = $modelClass;
-        $this->_model = new $modelClass;
+        $this->modelClass = $modelClass;
+        $this->model = new $modelClass;
     }
 
     public function all(): array
     {
-        return $this->_model->all()->toArray();
+        return $this->model->all()->toArray();
     }
 
     public function create(array $data)
     {
-        $this->_model->fill($data);
-        $this->_model->save();
-        return $this->_model;
+        $this->model->fill($data);
+        $this->model->save();
+        return $this->model;
     }
 
     public function update(int $id, array $data)
@@ -58,6 +55,6 @@ class DefaultRepository implements RepositoryInterface
 
     public function find(int $id)
     {
-        return $this->_model->findOrFail($id);
+        return $this->model->findOrFail($id);
     }
 }

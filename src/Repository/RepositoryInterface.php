@@ -1,12 +1,13 @@
 <?php
+declare(strict_types = 1);
+namespace SONFin\Repository;
 
-declare(struct_types = 1);
 
-namespace PHPFin\Repository;
-
-interface RepositoryInterface 
+interface RepositoryInterface
 {
     public function all(): array;
+
+    public function find(int $id);
 
     public function create(array $data);
 
@@ -14,4 +15,3 @@ interface RepositoryInterface
 
     public function delete(int $id);
 }
-
