@@ -1,0 +1,1 @@
+{"uri":"file:///home/tarcisio/dev/phpfin/vendor/aura/router/src/Exception.php","root":{"kind":0,"name":"","children":[{"kind":512,"name":"Aura\\Router","location":[8,0,8,22]},{"kind":1,"name":"Aura\\Router\\Exception","location":[17,0,19,1],"associated":[{"kind":1,"name":"Exception"}],"description":"Package-specific exception."}]}}

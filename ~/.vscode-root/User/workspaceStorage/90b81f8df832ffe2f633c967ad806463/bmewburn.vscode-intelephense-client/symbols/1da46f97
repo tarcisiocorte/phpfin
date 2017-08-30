@@ -1,0 +1,1 @@
+{"uri":"file:///home/tarcisio/dev/phpfin/vendor/symfony/debug/Tests/Fixtures/psr4/Psr4CaseMismatch.php","root":{"kind":0,"name":"","children":[{"kind":512,"name":"Symfony\\Component\\Debug\\Tests\\Fixtures","location":[2,0,2,49]},{"kind":1,"name":"Symfony\\Component\\Debug\\Tests\\Fixtures\\PSR4CaseMismatch","location":[4,0,6,1]}]}}

@@ -1,0 +1,1 @@
+{"uri":"file:///home/tarcisio/dev/phpfin/vendor/psr/container/src/ContainerExceptionInterface.php","root":{"kind":0,"name":"","children":[{"kind":512,"name":"Psr\\Container","location":[5,0,5,24]},{"kind":2,"name":"Psr\\Container\\ContainerExceptionInterface","location":[10,0,12,1],"description":"Base interface representing a generic exception in a container."}]}}

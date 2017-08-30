@@ -1,0 +1,1 @@
+{"uri":"file:///home/tarcisio/dev/phpfin/vendor/symfony/debug/Tests/Fixtures2/RequiredTwice.php","root":{"kind":0,"name":"","children":[{"kind":512,"name":"Symfony\\Component\\Debug\\Tests\\Fixtures2","location":[2,0,2,50]},{"kind":1,"name":"Symfony\\Component\\Debug\\Tests\\Fixtures2\\RequiredTwice","location":[4,0,6,1]}]}}

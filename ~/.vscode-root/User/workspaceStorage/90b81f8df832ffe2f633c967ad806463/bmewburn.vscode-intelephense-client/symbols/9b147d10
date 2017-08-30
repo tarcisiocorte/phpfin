@@ -1,0 +1,1 @@
+{"uri":"file:///home/tarcisio/dev/phpfin/vendor/symfony/debug/Tests/Fixtures/DeprecatedInterface.php","root":{"kind":0,"name":"","children":[{"kind":512,"name":"Symfony\\Component\\Debug\\Tests\\Fixtures","location":[2,0,2,49]},{"kind":2,"name":"Symfony\\Component\\Debug\\Tests\\Fixtures\\DeprecatedInterface","location":[9,0,11,1]}]}}

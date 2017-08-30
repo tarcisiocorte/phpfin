@@ -13,7 +13,6 @@ class DefaultRepository implements RepositoryInterface
      * @var string
      */
     private $_modelClass;
-    
     /**
      * @var Model
      */

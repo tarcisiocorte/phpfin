@@ -1,0 +1,1 @@
+{"uri":"file:///home/tarcisio/dev/phpfin/vendor/twig/twig/lib/Twig/NodeCaptureInterface.php","root":{"kind":0,"name":"","children":[{"kind":2,"name":"Twig_NodeCaptureInterface","location":[16,0,18,1],"description":"Represents a node that captures any nested displayable nodes."}]}}

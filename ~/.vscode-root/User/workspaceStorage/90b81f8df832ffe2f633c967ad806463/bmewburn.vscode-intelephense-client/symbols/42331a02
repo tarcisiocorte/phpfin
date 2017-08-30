@@ -1,0 +1,1 @@
+{"uri":"file:///home/tarcisio/dev/phpfin/vendor/fzaninotto/faker/src/Faker/Provider/de_AT/Text.php","root":{"kind":0,"name":"","children":[{"kind":512,"name":"Faker\\Provider\\de_AT","location":[2,0,2,31]},{"kind":1,"name":"Faker\\Provider\\de_AT\\Text","location":[4,0,6,1],"associated":[{"kind":1,"name":"Faker\\Provider\\de_DE\\Text"}]}]}}

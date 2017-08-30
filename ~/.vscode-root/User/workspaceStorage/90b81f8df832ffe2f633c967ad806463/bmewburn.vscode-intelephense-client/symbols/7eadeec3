@@ -1,0 +1,1 @@
+{"uri":"file:///home/tarcisio/dev/phpfin/vendor/twig/twig/lib/Twig/NodeOutputInterface.php","root":{"kind":0,"name":"","children":[{"kind":2,"name":"Twig_NodeOutputInterface","location":[16,0,18,1],"description":"Represents a displayable node in the AST."}]}}
