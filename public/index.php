@@ -58,6 +58,20 @@ $app
             'category' => $category
         ]);
     }, 'category-costs.edit')
+    ->get('/category-costs/{id}/show', function(ServerRequestInterface $request) use($app){
+        $view = $app->service('view.renderer');
+        $id = $request->getAttribute('id');
+        $category = \SONFin\Models\CategoryCost::findOrFail($id);
+        return $view->render('category-costs/show.html.twig', [
+            'category' => $category
+        ]);
+    }, 'category-costs.show')
+    ->get('/category-costs/{id}/delete', function(ServerRequestInterface $request) use($app){
+        $id = $request->getAttribute('id');
+        $category = \SONFin\Models\CategoryCost::findOrFail($id);
+        $category->delete();
+        return $app->route('category-costs.list');
+    }, 'category-costs.delete')
     ->post('/category-costs/{id}/update', function(ServerRequestInterface $request) use($app) {
         $id = $request->getAttribute('id');
         $category = \SONFin\Models\CategoryCost::findOrFail($id);
