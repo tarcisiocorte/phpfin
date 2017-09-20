@@ -10,9 +10,19 @@ class Auth implements AuthInterface
      */
     private $jasnyAuth;
 
+    // Chamando o método sessionStart() no construtor
     public function __construct(JasnyAuth $jasnyAuth)
     {
         $this->jasnyAuth = $jasnyAuth;
+        $this->sessionStart();
+    }
+
+    // Criando o método sessionStart() ao final da classe
+    protected function sessionStart()
+    {
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
     }
 
     public function login(array $credentials): bool
@@ -21,9 +31,10 @@ class Auth implements AuthInterface
         return $this->jasnyAuth->login($email, $password) !== null;
     }
 
+    // Criando método check no arquivo src/Auth/Auth.php
     public function check(): bool
     {
-        // TODO: Implement check() method.
+        return $this->jasnyAuth->user() !== null;
     }
 
     public function logout(): void

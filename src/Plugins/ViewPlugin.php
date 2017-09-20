@@ -7,6 +7,7 @@ namespace SONFin\Plugins;
 use Interop\Container\ContainerInterface;
 use SONFin\ServiceContainerInterface;
 use SONFin\View\ViewRenderer;
+use SONFin\View\Twig\TwigGlobals;
 
 class ViewPlugin implements PluginInterface
 {
