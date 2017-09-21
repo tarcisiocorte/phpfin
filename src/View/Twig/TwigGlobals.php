@@ -1,6 +1,14 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Luiz
+ * Date: 09/04/2017
+ * Time: 19:42
+ */
 
 namespace SONFin\View\Twig;
+
+
 use SONFin\Auth\AuthInterface;
 
 class TwigGlobals extends \Twig_Extension implements \Twig_Extension_GlobalsInterface
@@ -9,6 +17,7 @@ class TwigGlobals extends \Twig_Extension implements \Twig_Extension_GlobalsInte
      * @var AuthInterface
      */
     private $auth;
+
 
     /**
      * TwigGlobals constructor.
