@@ -88,33 +88,33 @@
         },
         {
             "name": "doctrine/inflector",
-            "version": "v1.2.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "e11d84c6e018beedd929cff5220969a3c6d1d462"
+                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/e11d84c6e018beedd929cff5220969a3c6d1d462",
-                "reference": "e11d84c6e018beedd929cff5220969a3c6d1d462",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/90b2128806bfde671b6952ab8bea493942c1fdae",
+                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0"
+                "php": ">=5.3.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.2"
+                "phpunit/phpunit": "4.*"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Doctrine\\Common\\Inflector\\": "lib/Doctrine/Common/Inflector"
+                "psr-0": {
+                    "Doctrine\\Common\\Inflector\\": "lib/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -151,20 +151,20 @@
                 "singularize",
                 "string"
             ],
-            "time": "2017-07-22T12:18:28+00:00"
+            "time": "2015-11-06T14:35:42+00:00"
         },
         {
             "name": "illuminate/container",
-            "version": "v5.4.27",
+            "version": "v5.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
-                "reference": "c5b8a02a34a52c307f16922334c355c5eef725a6"
+                "reference": "ccbfa2c69369a11b419d071ad11147b59eb9f052"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/container/zipball/c5b8a02a34a52c307f16922334c355c5eef725a6",
-                "reference": "c5b8a02a34a52c307f16922334c355c5eef725a6",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/ccbfa2c69369a11b419d071ad11147b59eb9f052",
+                "reference": "ccbfa2c69369a11b419d071ad11147b59eb9f052",
                 "shasum": ""
             },
             "require": {
@@ -194,20 +194,20 @@
             ],
             "description": "The Illuminate Container package.",
             "homepage": "https://laravel.com",
-            "time": "2017-05-24T14:15:53+00:00"
+            "time": "2017-01-28T17:55:54+00:00"
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.4.27",
+            "version": "v5.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "31f0193eb14aa3ee07841dc254081425616e79f0"
+                "reference": "dd256891c80fd94a58ab83d7989d6da2f50e30ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/31f0193eb14aa3ee07841dc254081425616e79f0",
-                "reference": "31f0193eb14aa3ee07841dc254081425616e79f0",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/dd256891c80fd94a58ab83d7989d6da2f50e30ea",
+                "reference": "dd256891c80fd94a58ab83d7989d6da2f50e30ea",
                 "shasum": ""
             },
             "require": {
@@ -236,7 +236,7 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2017-04-19T20:17:43+00:00"
+            "time": "2017-02-21T14:21:59+00:00"
         },
         {
             "name": "illuminate/database",
@@ -300,16 +300,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v5.4.27",
+            "version": "v5.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "a42393b56d0ec75f55e760f2a47bcf85a17a278d"
+                "reference": "904f63003fd67ede2ec3be018b322d1c29415465"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/a42393b56d0ec75f55e760f2a47bcf85a17a278d",
-                "reference": "a42393b56d0ec75f55e760f2a47bcf85a17a278d",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/904f63003fd67ede2ec3be018b322d1c29415465",
+                "reference": "904f63003fd67ede2ec3be018b322d1c29415465",
                 "shasum": ""
             },
             "require": {
@@ -353,7 +353,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2017-06-15T12:35:32+00:00"
+            "time": "2017-02-15T19:29:24+00:00"
         },
         {
             "name": "jasny/auth",
@@ -702,12 +702,12 @@
             "version": "v0.7.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/cakephp/phinx.git",
+                "url": "https://github.com/robmorgan/phinx.git",
                 "reference": "4e058f2df00f58f654d7983f3943b327bf046c7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/phinx/zipball/4e058f2df00f58f654d7983f3943b327bf046c7c",
+                "url": "https://api.github.com/repos/robmorgan/phinx/zipball/4e058f2df00f58f654d7983f3943b327bf046c7c",
                 "reference": "4e058f2df00f58f654d7983f3943b327bf046c7c",
                 "shasum": ""
             },
@@ -1049,16 +1049,16 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v3.2.13",
+            "version": "v3.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "df36a48672b929bf3995eb62c58d83004b1d0d50"
+                "reference": "0e1b15ce8fbf3890f4ccdac430ed5e07fdfe0690"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/df36a48672b929bf3995eb62c58d83004b1d0d50",
-                "reference": "df36a48672b929bf3995eb62c58d83004b1d0d50",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/0e1b15ce8fbf3890f4ccdac430ed5e07fdfe0690",
+                "reference": "0e1b15ce8fbf3890f4ccdac430ed5e07fdfe0690",
                 "shasum": ""
             },
             "require": {
@@ -1109,7 +1109,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-24T16:45:17+00:00"
+            "time": "2017-03-04T12:23:14+00:00"
         },
         {
             "name": "symfony/yaml",
